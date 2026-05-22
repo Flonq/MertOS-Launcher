@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MertOS Launcher</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="launcher">
+    <header class="hero">
+      <div>
+        <p class="eyebrow">MertOS Launcher</p>
+        <h1>Projelerini tek merkezden başlat.</h1>
+        <p class="subtitle">
+          GitHub repoları, canlı siteler, geliştirme araçları ve proje durumları için kişisel kontrol paneli.
+        </p>
+      </div>
+
+      <div class="status-pill">
+        <span></span>
+        System Ready
+      </div>
+    </header>
+
+    <section class="toolbar">
+      <input id="searchInput" type="text" placeholder="Proje veya araç ara..." />
+
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">Tümü</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="game">Game</button>
+        <button class="filter-btn" data-filter="backend">Backend</button>
+        <button class="filter-btn" data-filter="tool">Araç</button>
+      </div>
+    </section>
+
+    <section>
+      <div class="section-header">
+        <h2>Projeler</h2>
+        <p>Aktif geliştirdiğin işler</p>
+      </div>
+
+      <div id="projectGrid" class="grid"></div>
+    </section>
+
+    <section>
+      <div class="section-header">
+        <h2>Geliştirici Araçları</h2>
+        <p>Hızlı erişim bağlantıları</p>
+      </div>
+
+      <div id="toolGrid" class="tools-grid"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
