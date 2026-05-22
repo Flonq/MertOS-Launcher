@@ -1,0 +1,24 @@
+{
+  "name": "mertos-launcher",
+  "version": "1.0.0",
+  "description": "MertOS Launcher, kişisel projelerime, geliştirme araçlarıma ve önemli bağlantılarıma tek ekrandan ulaşmak için hazırlanmış modern bir geliştirici başlangıç panelidir.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Flonq/MertOS-Launcher.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Flonq/MertOS-Launcher/issues"
+  },
+  "homepage": "https://github.com/Flonq/MertOS-Launcher#readme",
+  "devDependencies": {
+    "electron": "^42.2.0"
+  }
+}
