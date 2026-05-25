@@ -4,14 +4,15 @@
   "description": "MertOS Launcher, kişisel projelerime, geliştirme araçlarıma ve önemli bağlantılarıma tek ekrandan ulaşmak için hazırlanmış modern bir geliştirici başlangıç panelidir.",
   "main": "main.js",
   "scripts": {
-    "start": "electron ."
+    "start": "electron .",
+    "dist": "electron-builder"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Flonq/MertOS-Launcher.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Mert Kaan Kindar",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
@@ -19,6 +20,25 @@
   },
   "homepage": "https://github.com/Flonq/MertOS-Launcher#readme",
   "devDependencies": {
-    "electron": "^42.2.0"
+    "electron": "^42.2.0",
+    "electron-builder": "^26.8.1"
+  },
+  "build": {
+    "appId": "com.mertkaankindar.mertoslauncher",
+    "productName": "MertOS Launcher",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "index.html",
+      "style.css",
+      "script.js",
+      "main.js",
+      "assets/**/*"
+    ],
+    "win": {
+      "target": "nsis",
+      "icon": "build/icon.ico"
+    }
   }
 }
