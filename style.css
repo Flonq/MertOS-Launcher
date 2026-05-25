@@ -12,10 +12,7 @@
   --text: #f8fafc;
   --muted: #8b98ad;
   --orange: #ff8a00;
-  --cyan: #22d3ee;
-  --violet: #8b5cf6;
   --green: #22c55e;
-  --red: #ef4444;
 }
 
 body {
@@ -230,17 +227,6 @@ h1 {
   font-size: 14px;
 }
 
-.icon {
-  width: 46px;
-  height: 46px;
-  display: grid;
-  place-items: center;
-  border-radius: 16px;
-  background: rgba(255, 138, 0, 0.12);
-  color: var(--orange);
-  font-size: 22px;
-}
-
 .badge {
   position: absolute;
   right: 18px;
@@ -282,11 +268,18 @@ h1 {
 .tool-card {
   min-height: 130px;
   padding: 20px;
+  color: var(--text);
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .tool-card h3 {
   margin-top: 12px;
   font-size: 17px;
+  color: var(--text);
+  text-decoration: none;
 }
 
 .hidden {
@@ -357,32 +350,12 @@ h1 {
   }
 }
 
-.tool-card {
-  color: var(--text);
-  text-decoration: none;
-}
-
 .tool-card:visited {
   color: var(--text);
 }
 
 .tool-card:hover h3 {
   color: var(--orange);
-}
-
-.tool-card .icon {
-  margin-bottom: 8px;
-}
-
-.tool-card {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.tool-card h3 {
-  color: var(--text);
-  text-decoration: none;
 }
 
 .logo-box {
